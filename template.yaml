@@ -62,11 +62,7 @@ Resources:
       Policies:
         - AWSXrayWriteOnlyAccess
       Environment:
-        Variables:
-          DB_INSTANCE: !Ref databaseFF6906E3
-          DB_ADDRESS: !GetAtt databaseFF6906E3.Endpoint.Address
-          DB_PORT: !GetAtt databaseFF6906E3.Endpoint.Port
-          DB_ARN: !Sub arn:aws:rds:${AWS::Region}:${AWS::AccountId}:db:${databaseFF6906E3}
+        Variables: {}
     Metadata:
       StackeryName: logErrors
   databaseFF6906E3:
